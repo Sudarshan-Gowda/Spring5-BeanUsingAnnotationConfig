@@ -1,5 +1,4 @@
-# Spring5-BeanUsingAnnotationConfig
-Spring5 beans using annotation configuration
+# Spring5 beans using annotation configuration
 
 This repo will demonstrate how to create spring beans using annotations (via java configuration) for any standalone application. 
 
@@ -19,12 +18,14 @@ This repo will demonstrate how to create spring beans using annotations (via jav
       ``
 
 In this repo example we used `@Service` annotation to get bean
+
 ``
 @Service
 public class TechnologyServiceImpl implements ITechnologyService
 ``
 
 1.2	Include bean packages in `@ComponentScan` annotation
+
 ``
 @Configuration
 @ComponentScan(basePackages = "com.star.sud.using.ComponentScanAnnotation.service")
@@ -33,21 +34,23 @@ public class ApplicationConfig
 
 ### 2.	Using @Bean annotations
 1.1	Create Java bean classes without any annotation.
+
 ``
 public class TechnologyServiceImpl implements ITechnologyService 
 ``
 
 1.2	Use @Bean annotation methods in configuration class
+
 ``
 @Configuration
 public class ApplicationConfig {
-
 	@Bean
 	public ITechnologyService technologyService() {
 		return new TechnologyServiceImpl();
 	}
 }
 ``
+
 
 ## Result of this Application:
 ``
