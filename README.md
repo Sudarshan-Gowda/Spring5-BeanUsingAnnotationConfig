@@ -24,6 +24,7 @@ In this repo example we used `@Service` annotation to get bean
 public class TechnologyServiceImpl implements ITechnologyService
 ``
 
+
 1.2	Include bean packages in `@ComponentScan` annotation
 
 ``
@@ -32,6 +33,7 @@ public class TechnologyServiceImpl implements ITechnologyService
 public class ApplicationConfig
 ``
 
+
 ### 2.	Using @Bean annotations
 1.1	Create Java bean classes without any annotation.
 
@@ -39,16 +41,17 @@ public class ApplicationConfig
 public class TechnologyServiceImpl implements ITechnologyService 
 ``
 
+
 1.2	Use @Bean annotation methods in configuration class
 
 ``
 @Configuration
 public class ApplicationConfig {
-	@Bean
-	public ITechnologyService technologyService() {
-		return new TechnologyServiceImpl();
-	}
-}
+@Bean
+public ITechnologyService technologyService() {
+	return new TechnologyServiceImpl();
+   }
+ }
 ``
 
 
