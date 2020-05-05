@@ -27,11 +27,11 @@ public class TechnologyServiceImpl implements ITechnologyService
 
 1.2	Include bean packages in `@ComponentScan` annotation
 
-``
-@Configuration
-@ComponentScan(basePackages = "com.star.sud.using.ComponentScanAnnotation.service")
-public class ApplicationConfig
-``
+<code>
+	@Configuration<br>
+	@ComponentScan(basePackages = "com.star.sud.using.ComponentScanAnnotation.service")<br>
+	public class ApplicationConfig<br>
+</code>
 
 
 ### 2.	Using @Bean annotations
