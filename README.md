@@ -10,12 +10,11 @@ This repo will demonstrate how to create spring beans using annotations (via jav
 
 1.1 We can use any one of following four annotations as appropriate.
 
-      ``
       @Component
       @Repository
       @Service
       @Controller
-      ``
+     
 
 In this repo example we used `@Service` annotation to get bean
 
@@ -27,11 +26,11 @@ public class TechnologyServiceImpl implements ITechnologyService
 
 1.2	Include bean packages in `@ComponentScan` annotation
 
-<code>
+``
 	@Configuration<br>
-	@ComponentScan(basePackages = "com.star.sud.using.ComponentScanAnnotation.service")<br>
-	public class ApplicationConfig<br>
-</code>
+	@ComponentScan(basePackages = "com.star.sud.using.ComponentScanAnnotation.service")
+	public class ApplicationConfig
+``
 
 
 ### 2.	Using @Bean annotations
